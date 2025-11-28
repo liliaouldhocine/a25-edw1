@@ -159,9 +159,9 @@ VALUES ('alice', 'alice@example.com'),
 
 ## **PARTIE 6 — Dossier final à remettre**
 
-Vous devez fournir :
+Vous devez fournir dans la plateform team un fichier compressé :
 
-**tp_php_mysql.zip** contenant :
+**VOTRE_NOM_tp_php_mysql.zip** contenant :
 
 - `info.php`
 - `test_mysqli.php`
