@@ -25,6 +25,12 @@ openssl req -x509 -newkey rsa:2048 -keyout server.key -out server.crt \
   -days 365 -nodes -subj "/CN=localhost"
 ```
 
+**Si vous utilisez Git Bash. vous devez ajouter ceci au début de la commande**
+
+````bash
+MSYS_NO_PATHCONV=1 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes -subj "/C=FR/ST=Region/L=Ville/O=MonEntreprise/CN=localhost"
+```
+
 ## 2. Structure du projet
 
 ```
@@ -256,3 +262,4 @@ console.log(`HTTPS sur https://localhost:${PORT}`);
 Exécutez simplement : `node start.js`
 
 Votre serveur Node.js avec TLS est maintenant prêt !
+````
