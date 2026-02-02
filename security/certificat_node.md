@@ -79,7 +79,7 @@ const server = https.createServer(options, (req, res) => {
 });
 
 // Démarrer le serveur
-const PORT = 443;
+const PORT = 3000;
 server.listen(PORT, () => {
   console.log(`✅ Serveur HTTPS démarré sur https://localhost:${PORT}`);
 });
@@ -187,8 +187,8 @@ const httpsOptions = {
 };
 
 const httpsServer = https.createServer(httpsOptions, app);
-httpsServer.listen(443, () => {
-  console.log("HTTPS sur le port 443");
+httpsServer.listen(3000, () => {
+  console.log("HTTPS sur le port 3000");
 });
 
 // Redirection HTTP vers HTTPS
